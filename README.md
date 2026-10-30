@@ -18,7 +18,9 @@ It works in **Claude Code** and **Codex** (and any harness that supports the ope
 3. Applies fixed adjustments: a risk floor, cheap models for mechanical volume, "Opus Medium beats Sonnet xhigh", Fable/Max only as escalation, Ultra/ultracode for divisible work.
 4. Escalation is always one step: same model one effort higher, or the bigger model starting at Medium — never both.
 
-The model lineup lives in `references/models.md` with a "Verified on" date. If it's older than 30 days, the skill searches the web and refreshes it before recommending, so retired models don't get recommended.
+**Already picked a model?** Say "I want to use Terra on this" and it keeps your model, picks the effort for it, and gives a one-line verdict: fits, overkill (with the cheaper option) or underpowered (with the specific risk).
+
+**Stays current.** `SKILL.md` never names a model. The ladder, roles and specialists live in `references/models.md`. If that table is more than 7 days old, the skill checks the two official model lists (OpenAI and Anthropic) before answering. New models get slotted into the ladder or listed as specialists, and retired ones are dropped. Where the installed skill is read-only (e.g. the Claude app), it uses the fresh data for that answer and tells you the table needs updating.
 
 ## Install
 
